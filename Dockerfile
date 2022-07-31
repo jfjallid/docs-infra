@@ -12,5 +12,4 @@ From nginx:alpine
 WORKDIR /usr/share/nginx/html
 COPY htpasswd /etc/nginx/htpasswd
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 443
 COPY --from=0 /mkdocs/site .
